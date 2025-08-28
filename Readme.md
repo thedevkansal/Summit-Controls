@@ -53,8 +53,8 @@ This project is a monorepo containing both the `frontend` and `backend` in one r
 
 ### 1. Clone the Repository
 ```bash
-git clone <YOUR_REPOSITORY_URL>
-cd <your-repo-name>
+git clone <https://github.com/thedevkansal/Summit-Controls>
+cd <Summit-Controls>
 ```
 
 ### 2. Backend Setup
