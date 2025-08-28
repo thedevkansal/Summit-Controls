@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+/* Apply anti-aliasing for smoother fonts across browsers */
+@layer base {
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Print-specific styles.
+  These rules are only applied when the user hits Ctrl+P or clicks a print button.
+*/
+@media print {
+  /* Hides any element with the 'no-print' class from the print output. */
+  .no-print {
+    display: none !important;
+  }
+
+  /* Ensures the background is white for printing, saving ink. */
+  body {
+    background-color: white !important;
+  }
+
+  /* Targets the ID card for printing. It makes sure only the card is visible,
+    centers it on the page, and slightly enlarges it for a better fit.
+  */
+  #printable-id-card {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1.1);
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    border: none;
+  }
+}
